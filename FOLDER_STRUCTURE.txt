@@ -1,0 +1,100 @@
+📁 Complete React Project Structure
+=====================================
+
+samudhrikalakshana_new/
+│
+├── 📁 public/                          ← Static files (images, icons)
+│   ├── vite.svg
+│   └── favicon.ico
+│
+├── 📁 src/                             ← All source code
+│   ├── 📁 api/
+│   │   └── api.js                      ← Axios configuration
+│   │
+│   ├── 📁 components/
+│   │   ├── 📁 auth/
+│   │   │   └── ProtectedRoute.jsx
+│   │   ├── 📁 layout/
+│   │   │   ├── Header.jsx
+│   │   │   ├── MainLayout.jsx
+│   │   │   └── Sidebar.jsx
+│   │   └── 📁 ui/                      ← shadcn/ui components
+│   │       ├── button.jsx
+│   │       ├── card.jsx
+│   │       ├── dialog.jsx
+│   │       ├── input.jsx
+│   │       ├── label.jsx
+│   │       ├── select.jsx
+│   │       ├── table.jsx
+│   │       ├── tabs.jsx
+│   │       └── textarea.jsx
+│   │
+│   ├── 📁 lib/
+│   │   └── utils.js                    ← Helper functions
+│   │
+│   ├── 📁 pages/                       ← Page components
+│   │   ├── 📁 activities/
+│   │   ├── 📁 approvals/
+│   │   ├── 📁 attendance/
+│   │   ├── 📁 auth/
+│   │   ├── 📁 claims/
+│   │   ├── 📁 dashboard/
+│   │   ├── 📁 manpower/
+│   │   ├── 📁 orders/
+│   │   ├── 📁 reports/
+│   │   └── 📁 targets/
+│   │
+│   ├── 📁 store/                       ← Redux store
+│   │   ├── 📁 slices/                  ← Redux slices
+│   │   └── store.js
+│   │
+│   ├── App.jsx                         ← Main App component
+│   ├── main.jsx                        ← Entry point
+│   └── index.css                       ← Global styles
+│
+├── 📁 node_modules/                    ← AUTO-GENERATED (run: npm install)
+│   └── (all npm packages)
+│
+├── 📁 dist/                            ← AUTO-GENERATED (run: npm run build)
+│   └── (production build files)
+│
+├── .eslintrc.cjs                       ← ESLint config
+├── .gitignore                          ← Git ignore rules
+├── .npmrc                              ← npm config
+├── index.html                          ← HTML template
+├── package.json                        ← Dependencies
+├── postcss.config.js                   ← PostCSS config
+├── tailwind.config.js                  ← Tailwind config
+├── vite.config.js                      ← Vite config
+├── README.md                           ← Documentation
+├── SETUP.md                            ← Setup guide
+└── PROJECT_STRUCTURE.md                 ← Structure docs
+
+=====================================
+📝 IMPORTANT NOTES:
+=====================================
+
+1. node_modules/ - Created automatically when you run:
+   → npm install
+
+2. dist/ - Created automatically when you run:
+   → npm run build
+
+3. public/ - Already created ✅
+   Contains static assets served directly
+
+4. src/ - Already created ✅
+   Contains all React source code
+
+5. .env - Create this file manually:
+   → VITE_API_BASE_URL=http://localhost:3000/api
+
+=====================================
+🚀 QUICK START:
+=====================================
+
+1. npm install          (creates node_modules/)
+2. Create .env file
+3. npm run dev          (starts development server)
+4. npm run build        (creates dist/ folder)
+
